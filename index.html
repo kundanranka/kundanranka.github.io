@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slap Countdown</title>
+</head>
+
+<style type="text/css">
+	
+
+table {
+  border-collapse: collapse;
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: 38vh;
+  font-family: arial;
+  border-spacing: 0;
+  width: 95%;
+}
+
+th, td {
+  text-align: center;
+  padding: 1%;
+}
+
+
+#red
+{
+	font-size: 5vw;
+	color: red;
+}
+
+#white
+{
+	font-size: 3vw;
+	color: white;
+}
+</style>
+
+<body bgcolor="black">
+	<script>
+
+var countDownDate = new Date("Sep 28, 2019 2:30:00").getTime();
+
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+    
+
+  var distance = countDownDate - now;
+    
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+
+  document.getElementById("days").innerHTML = days ; 
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+    
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days").innerHTML = 0; 
+  document.getElementById("hours").innerHTML = 0;
+  document.getElementById("minutes").innerHTML = 0;
+  document.getElementById("seconds").innerHTML = 0;
+  }
+}, 1000);
+</script>
+<div style="margin: 0 auto;">
+<table>
+	<tr>
+		<th colspan="4" id="white">Andrew Get Ready to be Slapped in:</th>
+	</tr>
+	<tr id="red">
+		<th id="days"></th>
+		<th id="hours"></th>
+		<th id="minutes"></th>
+		<th id="seconds"></th>
+	</tr>
+	<tr id="white">
+		<th>DAYS</th>
+		<th>HOURS</th>
+		<th>MINUTES</th>
+		<th>SECONDS</th>
+	</tr>
+</table>
+</div>
+</body>
+</html>
