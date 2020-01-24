@@ -61,9 +61,7 @@
 
 
 
-    /*--------------------
-                                                                                                Setup
-                                                                                                --------------------*/
+
     const Points = [];
     let rotation = 0;
     let newRotation = Math.random() * 360;
@@ -141,9 +139,9 @@
       --------------------*/
     let time;
     function draw() {
-      time += 0.01;
+      time += 0.005;
       background(0);
-      strokeWeight(2);
+      strokeWeight(1);
       noFill();
       translate(width / 2, height / 2);
       rotation = lerp(rotation, newRotation, smooth);
