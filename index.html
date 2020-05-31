@@ -1,329 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Infinity</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<link rel="icon" href="img/inf.png">
-    <!-- Custom styles -->
-    <link href="css/agency.css" rel="stylesheet">
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 9, 2019 15:37:25").getTime();
-// Update the count down every 1 second
-var x = setInterval(function() {
-  // Get todays date and time
-  var now = new Date().getTime();
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " d : " + hours + "  h : "
-  + minutes + " m : " + seconds + " s ";
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+<head>
+	<title>Kongana Holistic Clinic</title>
+	<style type="text/css">
+		.logo{
+			float: right;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 15%;
+			width: 20%;
+		}
+		.chakra{
+			position: fixed;
+			right: -260px;
+			margin-top: -120px;
+			width: 55%;
+			animation: rotation 20s infinite linear;
+		}
+		@keyframes rotation {
+			  from {
+			    transform: rotate(0deg);
+			  }
+			  to {
+			    transform: rotate(359deg);
+			  }
+			}
+		html,body{
+			margin:0px;
+			height: 100%;
+		}
+		.homepage{
+			height: 100%;
+			overflow: hidden;
+		}
+	</style>
 </head>
-  <body id="page-top">
-    <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">about us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Alumini</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Event</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="">schedule</a>
-             </li>
-			  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="">sponsers</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Header -->
-	<div id="clock">
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-		</div>
-		<p class="intro-heading text-uppercase" id="demo" style="font-family:'digital-clock-font';text-shadow:0px 0px 5px black;font-size:35px;color:#fed136;"></p>
-      </div>
-    </header>
+<body>
+	<div class="homepage">
+		<img class="chakra" src="img/chakra.png">	
+		<img class="logo" src="img/logo.png">
+		
 	</div>
-    <!-- About Us -->
-    <section id="services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 text-center"> 
-			<h2 class="section-heading text-uppercase" style="font-family: Rockwell;">About us</h2>
-            <p>
-	  <div class="h" style="font-family: 'Oswald', sans-serif;">
-          <font size="+2">
-          From the association of Computational Sciences of PSG College of Technology presents the 1st edition of INFINITY, where we conduct technical and non – technical symposium throughout all first years of PSG College of Technology.  
-          </font>
-		  </div><br><br>
-          <h2 class="section-heading text-uppercase" style="font-family: Rockwell;">INFINITY 2K19</h2>
-	 <div class="h" style="font-family: 'Oswald', sans-serif;">
-   <font size="+2">From the association of Computational Sciences of PSG College of Technology presents the 1st edition of INFINITY, here we conduct an intra-college symposium for all 1st years where they can test their skills and enrich their knowledge .This event gives you a platform where you can showcase your ability to put your ideas together in 5 different scenarios .Does people put up with your out of box thinking? No worries ,This event helps you to take advantage of it.</font>
-	</div>
-            </p>
-          </div>
-        </div>
-        </div>
-    </section>
-    <!-- Event -->
-    <section id="about" style="font-family: 'Baloo Thambi', cursive;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase" style="font-family: 'Charm', cursive;">Events</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <a href="events/PROZONE.html"><img class="rounded-circle img-fluid" src="img/about/1.png" alt=""></a>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading" align="left">
-                    <h3><a href="events/PROZONE.html" align="left" style="font-family: 'ZCOOL KuaiLe', cursive; color:#66b32d;">PRO-ZONE</a></h3>
-                    <h5 class="subheading" align="left">Debug your souls</h5>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-					<ul style="list-style-type:square">
-                      <li align="left">Algorithmic assessments</li>
-                      <li align="left">Spontaneity/Analyzer</li> 
-					  <li align="left">Stress Tester</li>
-                    </ul></p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <a href="events/INKLING.html"><img class="rounded-circle img-fluid" src="img/about/2.png" alt=""></a>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3><a href="events/INKLING.html" style="font-family: 'ZCOOL KuaiLe', cursive;">INKLING</a></h3>
-                    <h5 class="subheading">Work on Allusion</h5>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      <ul style="list-style-type:square">
-                        <li>Take your vision that is your mission</li>
-                        <li>Who am I? Why am I behaving this way, and are you aware of me?</li>
-                        <li>Choose your stream and win your dream</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <a href="events/INCOGNITO.html"><img class="rounded-circle img-fluid" src="img/about/3.jpg" alt=""></a>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading" align="left">
-                    <h3><a href="events/INCOGNITO.html" style="font-family: 'ZCOOL KuaiLe', cursive;">INCOGNITO</a></h3>
-                  <h5 class="subheading">Not all the treasures are silver and gold</h5>
-				  <div class="timeline-body">
-                    <p class="text-muted">
-                    <ul style="list-style-type:square">
-                     <li>Logical reasoning</li>
-                     <li>Participants-2 per team</li> 
-                     <li>Top 3 teams will be awarded</li>
-                    </ul>
-                  </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <a href="events/FUZZLE-BUZZLE.html"><img class="rounded-circle img-fluid" src="img/about/4.jpg" alt=""></a>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3><a href="events/FUZZLE-BUZZLE.html" style="font-family: 'ZCOOL KuaiLe', cursive;">FUZZLE-BUZZLE</a></h3>
-                   <h5 class="subheading">Strong Alone, Unstoppable Together</h5>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      <ul style="list-style-type:square">
-                        <li>Hail-Fellow-Well-Met</li>
-                        <li>Innovate your soul into Buzz world</li>
-                        <li>Synchronize in your own way</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-              </li>
-                <li>
-                <div class="timeline-image">
-                  <a href="events/GAMOHOLIX.html"><img class="rounded-circle img-fluid" src="img/about/5.png" alt=""></a>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading" align="left">
-                    <h3><a href="events/GAMOHOLIX.html" style="font-family: 'ZCOOL KuaiLe', cursive; color:#2e3b90;">GAMOHOLIX</a></h3>
-                    <h5 class="subheading">Just play. Have fun. Enjoy the game</h5>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      <ul style="list-style-type:square">
-                        <li align="left">Mini Militia</li>
-                        <li align="left">Need for Speed Most Wanted</li>
-                        <li align="left">Counter Strike</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-              </li>			  
-              <li class="timeline-inverted">
-                <div class="timeline-image" style="background-color:#3849b7">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Team -->
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <br>
-            <br>
-          </div>
-        </div>
-        </div>
-	
-	<br>
-		<div class="wrapper">
-  <div class="cols">
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://unsplash.it/500/500/)">
-						<div class="inner">
-							<p>Secretary</p>
-              <span>S.pranesh <br>T.kumaraguru</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-						  <p>8124279828<br>9443408910</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="wrapper">
-		<div class="cols">
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="url(https://unsplash.it/511/511/)">
-						<div class="inner">
-							<p>Technical Co-ordinator</p>
-              <span>vishnubalaji .RK</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>9677789028</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-			</div>
-		<div class="wrapper">
-		<div class="cols">
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://unsplash.it/502/502/)">
-						<div class="inner">
-							<p>Treasurer</p>
-              <span>G.kamalesh Ramachandran<br>S.madhumitha</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>9487507033<br>9751050567</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-			</div>
-	</section>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <span class="copyright"><font color="white">Copyright &copy; CSL. All rights reserved</font></span>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!--  JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- Custom scripts -->
-    <script src="js/agency.min.js"></script>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  </body>
+</body>
 </html>
