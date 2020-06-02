@@ -2,20 +2,22 @@
 <html>
 <head>
 	<title>Kongana Holistic Clinic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		.logo{
-			float: right;
+			position: absolute;
+			right: 1.8%;
+			top: 34%;
 			margin-left: auto;
-			margin-right: auto;
-			margin-top: 15%;
-			width: 20%;
+			width: 18%;
 		}
 		.chakra{
-			position: fixed;
-			right: -260px;
-			margin-top: -120px;
-			width: 55%;
-			animation: rotation 20s infinite linear;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: -350px;
+			right: -600px;
+			animation: rotation 40s infinite linear;
 		}
 		@keyframes rotation {
 			  from {
@@ -30,16 +32,51 @@
 			height: 100%;
 		}
 		.homepage{
-			height: 100%;
 			overflow: hidden;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+		.heading{
+			position: absolute;
+			margin-left:10vh;
+			margin-top: 5vh;
+			font-family: Cambria Math;
+			font-size: 500%;
+		}
+		@media (max-width: 1024px)
+		{
+			.heading{
+				opacity: 0%;
+			}
+			.chakra{
+				opacity: 40%;
+				width: 100%;
+				height: auto;
+				position: absolute;
+				top: 20%;
+				right: 0px;
+				animation: rotation 40s infinite linear;
+			}
+			.logo{
+				position: absolute;
+				top: 50%;
+				float: none;
+				right: 40%;
+				margin-left: auto;
+				width: 18%;
+			}
 		}
 	</style>
 </head>
 <body>
 	<div class="homepage">
-		<img class="chakra" src="img/chakra.png">	
-		<img class="logo" src="img/logo.png">
 		
+			<img class="chakra" src="assets/images/chakara.png">
+			<img class="logo" src="assets/images/logo.png">s
+		<h1 class="heading" >
+			Kongana<br>Holistic<br>Clinic
+		</h1>
 	</div>
 </body>
 </html>
