@@ -32,15 +32,15 @@ h3 {
 h4 {
 	color: #222;
 	font-family: "Ubuntu", sans-serif;
-	font-size: 16px !important;
+	font-size: 22px !important;
 	font-weight: 400
 }
 
 h5 {
-	color: #777;
+	color: #495057;
 	font-family: "Roboto", sans-serif;
 	text-transform: capitalize;
-	font-size: 14px !important;
+	font-size: 17px !important;
 	font-weight: 400
 }
 
