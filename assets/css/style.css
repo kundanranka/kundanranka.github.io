@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-	color: #222;
+	color: #fff;
 	font-family: "Ubuntu", sans-serif;
 	font-size: 45px ;
 	font-weight: 700
@@ -30,14 +30,14 @@ h3 {
 }
 
 h4 {
-	color: #222;
+	color: #c8c1c1;
 	font-family: "Ubuntu", sans-serif;
 	font-size: 22px !important;
 	font-weight: 400
 }
 
 h5 {
-	color: #495057;
+	color: #adadad;
 	font-family: "Roboto", sans-serif;
 	text-transform: capitalize;
 	font-size: 17px !important;
@@ -197,7 +197,7 @@ textarea:focus {
 	padding: 7px 10px;
 	text-decoration: none;
 	display: inline-block;
-	color: #222;
+	color: #fff;
 	font-weight: 500;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -442,7 +442,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #header.header-scrolled {
-	background: #f9f9fd;
+	background: #212529;
 	transition: all 0.5s;
 	top: 0
 }
