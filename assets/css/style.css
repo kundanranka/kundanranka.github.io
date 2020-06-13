@@ -3318,7 +3318,7 @@ h6 {
 }
 
 .section-padding {
-	padding: 130px 0
+	padding: 130px 0;
 }
 
 .section-padding2 {
@@ -3330,7 +3330,7 @@ h6 {
 }
 
 .section-padding4 {
-	padding: 130px 0 200px
+	padding: 130px 0 0px
 }
 
 .section-top {

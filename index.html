@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
 	<link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 
@@ -126,6 +127,232 @@
             font-family: "Ubuntu", sans-serif;
             color: #fff;
         }
+
+
+        .wrap {
+    color: #000;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 1840px;
+    padding: 0 40px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .btn{
+    min-width: 150px;
+    margin-bottom: 10px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: background .25s ease;
+    border: none;
+    white-space: normal;
+    vertical-align: middle;
+    overflow: visible;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    background-color: #beac95;
+  }
+  .btn-blauw{background-color: #1C69D4; color: white;}
+  .btn-btn-oranje {background-color: #ed9300; color: white;}  
+  .timeline-wrap{position:relative; padding:0 50px;}
+  .timeline{
+    overflow-x:auto;
+    -webkit-overflow-scrolling: touch;
+    background-repeat: repeat-x;
+    background-size: 10px 2px;
+    background-position: center top 60%;
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(66%,#000),color-stop(0,transparent));
+    background-image: linear-gradient(90deg,#000 66%,transparent 0);
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    flex-flow: row nowrap;
+    transition: height .2s ease-out;
+    transition: height .2s ease-out;
+    transition: height .2s ease-out;
+  }
+  .timeline-title, .timeline-content-title{font-weight:600;}
+  .timeline-item{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:flex;
+    justify-content: space-between;
+    flex-flow:wrap;
+    -webkit-transition: max-width .2s,-webkit-transform .4s ease-out;
+    transition: max-width .2s,-webkit-transform .4s ease-out;
+    transition: max-width .2s,transform .4s ease-out;
+    transition: max-width .2s,transform .4s ease-out,-webkit-transform .4s ease-out;
+    cursor: pointer;
+    margin:0 100px; 
+    height:auto;
+
+  }
+  .i-is-active.timeline-item{cursor:default;}
+  .timeline-content{width:100%;}
+  .p-timeline-item:hover{transform:scale(1.1); transition:transform .3s ease;}
+  .bmw:hover time, .bmw.i-is-active time, .timeline-content-title.bmw{color:#1C69D4;}
+  .mini:hover time, .mini.i-is-active time, .timeline-content-title.mini{color:#ed9300;}
+  .bmw:hover time, .mini:hover time, .bmw time, .mini time{transition:color .3s ease;}
+  .p-timeline-item.i-is-active{cursor: default;}
+  .bmw:hover .p-timeline-block{background-color:#1C69D4;}
+  .mini:hover .p-timeline-block{background-color:#ed9300;}
+  .bmw .p-timeline-block, .mini .p-timeline-block, .mini:hover .p-timeline-block, .bmw:hover .p-timeline-block {transition:background-color 1s ease;}
+  .p-timeline-date, .p-timeline-carmodel, .p-timeline-block{width:100%;}
+  .p-timeline-date{font-weight:600;font-size:20px;}
+  .p-timeline-carmodel{margin-top: 5px;margin-bottom: 10px;}
+  .p-timeline-block {
+    min-width:55px;
+    min-height:55px;
+    max-width:55px;
+    max-height:55px;
+    border: solid 0px black;
+    border-radius:50%;
+    background-color:#007bff;
+    position:relative;
+    top:3px;
+    left:48px;
+    margin-bottom:20px;
+  }
+
+  .p-timeline-item{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap:wrap;
+    min-width:150px;
+    max-width:150px;
+    position: relative;
+    text-align:center;
+    transition:color .3s ease-in-out;
+    transition:transform .3s ease;
+  }
+  .p-timeline-content{
+    width:98%;
+    height:0;
+    position:absolute;
+    overflow:hidden;
+    visibility:hidden;
+    opacity: 0;
+    transform:translateX(-1000px);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    padding: 50px 20px 20px 20px;
+  }
+  .i-is-active.p-timeline-content{
+    color: #000;
+    height:auto;
+    padding: 50px 20px 20px 20px;
+    float:left;
+    width:98%;
+    text-align:left;
+    position:relative;
+    visibility: visible;
+    opacity:1;
+    transform:translateX(0px);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .i-is-active.p-timeline-content h3, .i-is-active.p-timeline-content time{width:100%;}
+  .i-is-active.p-timeline-content .timeline-content-card{}
+  .i-is-active.p-timeline-content .timeline-content-image{width:59%;}
+  .i-is-active.p-timeline-content .timeline-content-card, .i-is-active.p-timeline-content .timeline-content-image{float:left;}
+  .i-is-active.p-timeline-content .timeline-content-image:after{clear:both;}
+  .i-is-active.bmw .p-timeline-block{background-color:#1C69D4;} 
+  .i-is-active.mini .p-timeline-block{background-color:#ed9300;} 
+  .i-is-active.p-timeline-item:hover{transform: none;}
+  .i-is-active .p-timeline-item{transform:scale(1.1);}
+  .bmw.i-is-active.p-timeline-content h3 {color:#1C69D4;}
+  .mini.i-is-active.p-timeline-content h3 {color:#ed9300;}
+  .timeline-content-image img{width:100%; height:auto; max-width:100%;}
+  .p-timeline-content time {font-size: 15px; line-height: 40px; font-style: italic; }
+  .p-timeline-content p {font-size:16px; line-height:21px; padding-right:30px; font-weight:300;}
+  .timeline-content-title{font-size:28px;}
+  .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.close:hover {opacity: 1;}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {transform: rotate(45deg);}
+.close:after {transform: rotate(-45deg);}
+
+/*Custom scrollbar styling*/
+.timeline::-webkit-scrollbar {height:8px;}
+.timeline::-webkit-scrollbar-track {box-shadow: inset 0 0 5px lightgrey; border-radius: 10px;} /* Track */
+.timeline::-webkit-scrollbar-thumb {background: #beac95; border-radius: 10px;} /* Handle */
+
+/*  ========== Media Queries ========== */
+
+/* laptop resolutions*/
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .timeline{background-position: center top 60%;}
+  .i-is-active.p-timeline-content .timeline-content-card{}
+  .i-is-active.p-timeline-content .timeline-content-image{width:50%;}
+}
+/*Tablet - Landscape*/
+@media screen and (max-width: 1199px){
+  .timeline-content-title{font-size: 1.7em;}
+  .p-timeline-content time{font-size:1em;}
+}
+/*Tablet - Portrait*/
+@media screen and (max-width: 1020px){
+  .p-timeline-carmodel{margin:0;}
+   .wrap{padding:0 40px;} 
+  .timeline-wrap{padding:0;}
+  .p-timeline-content{display:flex;flex-flow: column;}
+  .i-is-active.p-timeline-content .timeline-content-card, .i-is-active.p-timeline-content .timeline-content-card, .i-is-active.p-timeline-content .timeline-content-image{width:100%;}
+  .i-is-active.p-timeline-content .timeline-content-image{padding:0; order:0; margin-bottom:20px;}
+  .i-is-active.p-timeline-content .timeline-content-card{padding:0; order:1;}
+  .i-is-active.p-timeline-content{padding-left:0; padding-right:0;}
+  .timeline-content-button{width:100%; padding:10px 0px;} 
+  
+}
+/* Mobile devices */
+@media screen and (max-width: 768px){
+  body{padding:0;} 
+  .timeline{background-position: center top 55%;}
+  .timeline-item{margin:0 10px;}
+  .p-timeline-block{min-width: 45px; min-height: 45px; max-width: 45px; max-height: 45px;}
+  .p-timeline-date{font-size:16px;}
+  .p-timeline-carmodel{margin:0; line-height:20px; font-size: 13px;}
+  .p-timeline-content time{line-height:20px;}
+  .p-timeline-content p{font-size:0.9em; padding-right:0px;}
+  .timeline-content-title{font-size:1.5em; line-height:1.3em;}
+  .close{right:0px;}
+  .timeline-title{line-height:1em; font-size:1.5em;}
+  .timeline::-webkit-scrollbar {height:4px;}
+}
 	</style>
 </head>
 <body>
@@ -210,24 +437,82 @@
                     <div class="slogan">
                     <h5>svasti prajabhyah paripalayantam nyayena margena mahim mahi shah | gobrahmanebhyah shubham astu nityam lokah samastah sukhino bhavantu ||</h5>
                     </div>
-                    <a class="template-btn mt-3" data-toggle="modal" data-target="#book_app">Book an appointment</a>
+                    <a class="template-btn mt-3" data-toggle="modal" data-target="#book_app" style="color: white;">Book an appointment</a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="specialist-area section-padding4" id="timeline">
+        <div class="wrap">
+  <div class="timeline-wrap">
+    <h2 class="section-top text-center">Journey</h2>
+    <ul class="timeline">
+      <li class="timeline-item mini" >
+        <div class="p-timeline-item" >
+          <time class="p-timeline-date">1930-1980</time>
+          <span class="p-timeline-carmodel" data-car="1"></span>
+          <div class="p-timeline-block"></div>
+        </div>
+      </li>
+      <li class="timeline-item mini">
+        <div class="p-timeline-item" >
+          <time class="p-timeline-date" datetime="2019-06-01">1945-1992</time>
+          <span class="p-timeline-carmodel" data-car="2"></span>
+          <div class="p-timeline-block"></div>
+        </div>
+      </li>
+      <li class="timeline-item mini" >
+        <div class="p-timeline-item" >
+          <time class="p-timeline-date" datetime="2019-07-01">2003</time>
+          <span class="p-timeline-carmodel" data-car="3"></span>
+          <div class="p-timeline-block"></div>
+        </div>
+      </li>
+    </ul>
+    <div class="timeline-content">
 
+       <div class="p-timeline-content" data-car="1">
+        <div class="timeline-content-card">
+          <h3 class="timeline-content-title bmw"></h3>
+          <time class="timeline-content-date" datetime="2019-05-01">1930-1980</time>
+          <p>Our journey as traditional medicine practitioners began with our ancestors in the 1930. First in the list is Subbhamma patti. She practiced as gramma vaidyar (village traditional medicine practitioner) for more than 50 years (1930-1980). She treated patients for liver diseases (such as jaundice), skin diseases (psoriasis, rashes), poisonous bites (such as centipede, rat and snake bites). She first began her practice in Poovanur village later during her late 50’s she shifted to Mettupalayam, Tiruppur district along with her husband Venkatachalam chettiar, who was also a gramma vaidyar and known for his free of cost treatments during the period 1930-1978.</p>  
+          <div class="close" data-type-close></div>
+        </div>
+      </div>
+       <div class="p-timeline-content" data-car="2">
+        <div class="timeline-content-card">
+          <h3 class="timeline-content-title mini"></h3>
+          <time class="timeline-content-date" datetime="2019-06-01">1945-1992s</time>
+          <p>The traditional medicine practitioner was passed hereditarily to their children Kandasamy chettiar and Muthayammal. Kandasamy chettiar was gramma vaidyar in Mettupalayam, Tiruppur district from 1964 -1990. He treated patient’s liver diseases, skin diseases, poisonous bites and arthritis while Muthuammal married and settled in Kambiliyampatti village near Kangayam town. She consulted and practiced in the village from 1945-1992. She also followed the same treatment method as her parents and was a specialist in treating patients for skin diseases (psoriasis, boils, chicken pox, rashes), labor and liver diseases. This practice was then taken over by her son Subbukutty for 27 years (1975-2012) in Kambiliyampatti village. Along with him practised K.Rangasamy who is son of Kandasamy chettiar and grandson of Subbhamma patti.</p>
+          <div class="close" data-type-close></div>
+        </div>
+      </div>
+      <div class="p-timeline-content" data-car="3">
+        <div class="timeline-content-card">
+          <h3 class="timeline-content-title mini"></h3>
+          <time class="timeline-content-date" datetime="2019-07-01">2003</time>
+          <p>  K. Rangasamy started practise as hereditary traditional medicine practitioner in the year 2003 in Kambiliyampatti village and later settled in Palani. He is a specialist in treating patients for fertility, obesity, hyperglycemia, psychiatric disorders, liver diseases (jaundice stage I,II & III), skin diseases (psoriasis, rashes), lung diseases and cancer (stage I &II). He still practices in Palani as SMP. 
+Followed by his ancestors, R. Rajkumar (s/o K. Rangasamy and g/o Kandasamy chettiar & K. Subbukutty) started his own clinic in the year 2019. He is an SMP who specializes dip. in Herbal medicine and dip. in hereditary tamil medicine and carries out the traditional practice as his ancestors successfully.
+</p>
+          <div class="close" data-type-close></div>
+        </div>
+        
+      </div>
+         </div>
+</div>
+    </section>
     <section class="specialist-area section-padding" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-top text-center">
                         <h2>Our Team</h2>
-                        <p>Green above he cattle god saw day multiply under fill in the cattle fowl a all, living, tree word link available in the service for subdue fruit.</p>
+                        
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="single-doctor mb-4 mb-lg-0">
                         <div class="doctor-img">
                             <img src="assets/images/Rajkumar R.jpg" alt="" class="img-fluid">
@@ -246,7 +531,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="single-doctor mb-4 mb-lg-0">
                         <div class="doctor-img">
                             <img src="assets/images/Sakthi.jpg" alt="" class="img-fluid">
@@ -265,18 +550,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="single-doctor mb-4 mb-sm-0">
                         <div class="doctor-img">
                             <img src="assets/images/Ragupathi.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="content-area">
                             <div class="doctor-name text-center">
-                                <h3>Dr.Ragupathi.G (BNYS)</h3>
+                                <h3>Dr.Raghupathi BNYS</h3>
                                 <h6></h6>
                             </div>
                             <div class="doctor-text text-center">
-                                <p align="justify">Head consultant of Kongana holistic clinic and he specializes in acupuncture, acupressure, magnetotherapy, hydrotherapy, diet therapy, and therapeutic yoga. He Graduated from Sivraj Naturopathy and Yoga Medical College, Salem. He has experience of 4 years and previously he has worked with Ayurvedic retreat center Kannur and later in Anandham yoga for 1 year.</p>
+                                <p align="justify">Head consultant of Kongana holistic clinic and he specializes in acupuncture, acupressure, magnetotherapy, hydrotherapy, diet therapy, and therapeutic yoga. He Graduated from Sivraj Naturopathy and Yoga Medical College, Salem. He has previously worked with Ayurveda retreat centre, Coonoor. Later he was appointed as consultant in Anandham Yoga Natural health centre for 3 years.</p>
                                 <ul class="doctor-icon">
                                     <li><a href="#"><i class="fa fa-facebook"></i><a></li>
                                     <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
@@ -285,46 +570,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-doctor mb-4 mb-sm-0">
-                        <div class="doctor-img">
-                            <img src="assets/images/vijay.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="content-area">
-                            <div class="doctor-name text-center">
-                                <h3>A.M.Vijay</h3>
-                                <h6></h6>
-                            </div>
-                            <div class="doctor-text text-center">
-                                <p align="justify">Paarambariya maruthuvar (Siddha Medicine Practitioner) of Kongana holistic clinic. He is having work experience in this field for over 10 years.</p>
-                                <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
     <section class="feature-area section-padding" id="treatment">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-9 offset-lg-3">
                     <div class="section-top text-center">
                         <h2>Treatments</h2>
-                        <p>Green above he cattle god saw day multiply under fill in the cattle fowl a all, living, tree word link available in the service for subdue fruit.</p>
+                        
                     </div>
-                </div>
+              <div class="row">
+                
                 <div class="col-lg-3 col-md-6">
                     <div class="single-feature text-center item-padding">
                         <a data-toggle="modal" data-target="#Modal1">
                             <img src="assets/images/feature1.png" alt="">
                             <h3>Traditional</h3>
-                            <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                            <p align="center">(Click here for more details)</p>
+                            <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                            <p align="center">(Click here for more details)</p> -->
                         </a>
                     </div>
                 </div>
@@ -333,8 +598,8 @@
                         <a data-toggle="modal" data-target="#Modal2">
                             <img src="assets/images/feature2.png" alt="">
                             <h3>Naturopathy</h3>
-                            <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                            <p align="center">(Click here for more details)</p>
+                            <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                            <p align="center">(Click here for more details)</p> -->
                         </a>
                     </div>
                 </div>
@@ -343,8 +608,8 @@
                         <a data-toggle="modal" data-target="#Modal3">
                             <img src="assets/images/feature3.png" alt="">
                             <h3>Yoga</h3>
-                            <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                            <p align="center">(Click here for more details)</p>
+                            <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                            <p align="center">(Click here for more details)</p> -->
                         </a>
                     </div>
                 </div>
@@ -353,8 +618,8 @@
                         <a data-toggle="modal" data-target="#Modal4">
                             <img src="assets/images/feature4.png" alt="">
                             <h3>Diseases Treated</h3>
-                            <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                            <p align="center">(Click here for more details)</p>
+                            <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
+                            <p align="center">(Click here for more details)</p> -->
                         </a>
                     </div>
                 </div>
@@ -367,7 +632,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Traditional</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                 </div>
                 <div class="modal-body">
                     <p>Some text in the modal.</p>
@@ -384,7 +649,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Naturopathy</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                 </div>
                 <div class="modal-body">
                     <p>Some text in the modal.</p>
@@ -401,7 +666,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Yoga</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <p>Some text in the modal.</p>
@@ -418,7 +682,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Diseases Treated</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                 </div>
                 <div class="modal-body">
                     <p>Some text in the modal.</p>
@@ -435,7 +699,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Book an appointment</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                 </div>
                 <div class="modal-body">
                     <form>
@@ -448,8 +712,8 @@
                             <input type="tel" class="form-control" id="book_number" placeholder="Enter your contact number">
                         </div>
                         <div class="form-group">
-                            <label for="book_date">Date and Time of Appointment</label>
-                            <input class="form-control" type="datetime-local" value="Choose your date and time of convenience" id="book_date">
+                            <label for="datetimepicker4">Date and Time of Appointment</label>
+                            <input class="form-control" type="datetime-local" value="Choose your date and time of convenience" id="datetimepicker4" readonly>
                         </div>
                         <button class="btn btn-primary" type="submit">Book an appointment</button>
                     </form>
@@ -462,11 +726,66 @@
     </div>
 
 <script type="text/javascript">
-    $('#book_date').book_date({ 
-    format: 'DD/MM/YYYY', 
-    minDate: moment().millisecond(0).second(0).minute(0).hour(0),
-    clear : false 
-});
+    $(function () {
+     $('#datetimepicker4').datetimepicker({   
+         format: 'YYYY-MM-DD',
+         minDate: new Date(),
+      });
+ });
+
+
+  
+  //set up global variables for all functions to use
+  var item = '.timeline-item';
+  var content = '.p-timeline-content';
+  var active = 'i-is-active';
+
+  
+  //Handling events
+  $('.timeline-item').on('click', function(){
+    if(window.innerWidth<786){ 
+    document.getElementById("timeline").style.padding="130px 0 370px";}showTimelineContent(this); });
+  $('.close').on('click', function(){ document.getElementById("timeline").style.padding="130px 0px 0px";closeCurrentContent(this); });
+
+  function showTimelineContent(element){
+    var itemId = $(element).find('.p-timeline-carmodel').attr('data-car');
+    var highlighted = $(element).find('.p-timeline-carmodel');
+
+    //Prevent having multiple items with the class i-is-active
+    if($(item).hasClass(active)){ $(item).removeClass(active); }
+  
+    //grab the id from the data attribute of each contentblock
+    $(content).each(function(){
+      var contentid = $(this).attr('data-car');
+
+      //check if timeline item id is equal to the content id
+      //If they're equal, show the content associated to that timeline item
+      if(itemId == contentid){
+        var current = $(content +'[data-car="'+contentid+'"]');
+        $(current).addClass(active);
+        $(element).addClass(active);
+
+        //If the content is not the selected (current) one
+        $(content).not(current).removeClass(active);
+
+      }
+    });
+  }
+
+ function closeCurrentContent(event){
+    var contentblock = $(event).parents(content);
+    var contentid = $(contentblock).attr('data-car');
+    $(item).each(function(){
+      var itemId = $(this).find('.p-timeline-carmodel').attr('data-car');
+      
+      if(itemId == contentid){
+        //remove class i-is-active from highlighted item 
+        var currentItem = $(this).removeClass(active);
+        contentblock.removeClass(active);
+
+      }
+    });
+  }
 </script>
 
 <div id="floating-rishi">
