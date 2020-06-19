@@ -353,6 +353,30 @@
   .timeline-title{line-height:1em; font-size:1.5em;}
   .timeline::-webkit-scrollbar {height:4px;}
 }
+#gradient {
+    background: linear-gradient(265deg,#15e4fd,#244cfd);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient_animation 15s ease infinite;
+    -moz-animation: gradient_animation 15s ease infinite;
+    animation: gradient_animation 15s ease infinite;
+}
+
+@-webkit-keyframes gradient_animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes gradient_animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes gradient_animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
 	</style>
 </head>
 <body>
@@ -536,7 +560,7 @@
                                 <h3>Rajkumar R</h3>
                             </div>
                             <div class="doctor-text text-center">
-                                <p align="justify">He completed his undergraduate degree in B.E.CSE from Maharaja Institute of Technology and postgraduate degree from Karpagam University. He also specializes in dip.in.Hereditary Tamil medicines and dip.in.Herbal medicines. He is the Director of Lemmurian poly manufacturers Pvt Ltd., since 2018</p>
+                                <p align="justify">He completed his undergraduate degree in Computer Science Engineering from Maharaja Institute of Technology and postgraduate degree from Karpagam University. He also specializes in diploma in Hereditary Tamil medicines and diploma in Herbal medicines. He is the Director of Lemmurian poly manufacturers Pvt Ltd., since 2018</p>
                                 <ul class="doctor-icon">
                                     
                                     <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
@@ -575,7 +599,7 @@
                                 <h6></h6>
                             </div>
                             <div class="doctor-text text-center">
-                                <p align="justify">Head consultant of Kongana holistic clinic and he specializes in acupuncture, acupressure, magnetotherapy, hydrotherapy, diet therapy, and therapeutic yoga. He Graduated from Sivraj Naturopathy and Yoga Medical College, Salem. He has previously worked with Ayurveda retreat centre, Coonoor. Later he was appointed as consultant in Anandham Yoga Natural health centre for 3 years.</p>
+                                <p align="justify">Head consultant of Kongana holistic clinic and he specializes in acupuncture, acupressure, magnetotherapy, hydrotherapy, diet therapy, and therapeutic yoga. He Graduated from Sivaraj Naturopathy and Yoga Medical College, Salem. He has previously worked with Ayurveda retreat centre, Coonoor. Later he was appointed as consultant in Anandham Yoga Natural health centre for 3 years.</p>
                                 <ul class="doctor-icon">
                                     
                                     <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
@@ -597,40 +621,40 @@
                     </div>
               <div class="row">
                 
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding">
+                <div class="col-lg-3 col-md-6" >
+                    <div class="single-feature text-center item-padding" id="gradient">
                         <a data-toggle="modal" data-target="#Modal1">
-                            <img src="assets/images/feature1.png" alt="">
+                            
                             <h3>Traditional</h3>
                             <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
                             <p align="center">(Click here for more details)</p> -->
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-md-0">
+                <div class="col-lg-3 col-md-6" >
+                    <div class="single-feature text-center item-padding mt-4 mt-md-0" id="gradient">
                         <a data-toggle="modal" data-target="#Modal2">
-                            <img src="assets/images/feature2.png" alt="">
+                            
                             <h3>Naturopathy</h3>
                             <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
                             <p align="center">(Click here for more details)</p> -->
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
+                <div class="col-lg-3 col-md-6" >
+                    <div class="single-feature text-center item-padding mt-4 mt-lg-0" id="gradient">
                         <a data-toggle="modal" data-target="#Modal3">
-                            <img src="assets/images/feature3.png" alt="">
+                            
                             <h3>Yoga</h3>
                             <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
                             <p align="center">(Click here for more details)</p> -->
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
-                        <a data-toggle="modal" data-target="#Modal4">
-                            <img src="assets/images/feature4.png" alt="">
+                <div class="col-lg-3 col-md-6" >
+                    <div class="single-feature text-center item-padding mt-4 mt-lg-0" id="gradient">
+                        <a data-toggle="modal" data-target="#Modal4" >
+                            
                             <h3>Diseases Treated</h3>
                             <!-- <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
                             <p align="center">(Click here for more details)</p> -->
@@ -640,7 +664,44 @@
             </div>
         </div>
     </section>
-
+    <!-- Contact Form Starts -->
+    <section class="contact-form section-padding3">
+        <div class="container">
+          <div class="section-top text-center">
+            <h2>Contact Us</h2>
+          </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Atthipalayam, Coimbatore</h3>
+                            <p>36A, Green park, Sri Ranganathar College opp, Kovilpalayam to Thudiyalur main road, Atthipalayam, Coimbatore- 641110</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>+91 9994926820</h3>
+                            <p>Mon to Fri 9am to 6 pm</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3> konganaholisticclinic@gmail.com</h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
     <div class="modal fade" id="Modal1" role="dialog" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -738,8 +799,9 @@
             </div>
         </div>
     </div>
-
+    
 <script type="text/javascript">
+
     $(function () {
      $('#datetimepicker4').datetimepicker({   
          format: 'YYYY-MM-DD',
