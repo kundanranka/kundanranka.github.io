@@ -220,3 +220,18 @@
 				top: -56px;
 			}
 		}
+
+		.inputarea{
+		position: fixed;
+		bottom: 0;
+		display: flex;
+		padding: 10px;
+		background: white;
+		width: 98%;
+		}
+	.inputarea * {
+	  padding: 10px;
+	  border: none;
+	  border-radius: 3px;
+	  font-size: 2em;
+	}
