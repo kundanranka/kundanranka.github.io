@@ -222,7 +222,10 @@
 			}
 			.msger-chat{
 
-		  padding-bottom: 150px;
+		  padding-bottom: 10px;
+			}
+			#day,#night{
+				height: 20%;
 			}
 		}
 	.inputarea{
