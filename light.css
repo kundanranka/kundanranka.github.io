@@ -233,7 +233,7 @@
 			}
 		}
 	.inputarea{
-		position: fixed;
+		/*position: fixed;*/
 		bottom: 0;
 		display: flex;
 		font-size: 25px;
