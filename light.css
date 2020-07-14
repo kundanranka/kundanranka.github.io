@@ -84,7 +84,6 @@
 		  overflow-y: auto;
 		  padding: 10px;
 		  padding-top: 0px;
-		  padding-bottom: 150px;
 		}
 		.msger-chat::-webkit-scrollbar {
 		  width: 6px;
@@ -239,7 +238,7 @@
 		display: flex;
 		font-size: 30px;
 		padding: 10px;
-		background: white;
+		background: black;
 		width: 98%;
 		}
 	.inputarea * {
