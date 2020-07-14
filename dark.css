@@ -215,7 +215,7 @@
 			.dark-mode-toggle{
 				width: 150px;
 				top: 50px;
-				height: 300px;
+				height: 75px;
 			}
 			svg{
 				top: -56px;
@@ -225,7 +225,7 @@
 		  padding-bottom: 10px;
 			}
 			#day,#night{
-				height: 20%;
+				height: 100%;
 			}
 		}
 	.inputarea{
