@@ -204,6 +204,8 @@
 			}
 			.msger-inputarea {
 				font-size: 45px;
+				padding:0px;
+				bottom: 0;
 			}
 			.msg-img{
 				width: 70px;
