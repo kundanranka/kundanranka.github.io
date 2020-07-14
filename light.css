@@ -161,7 +161,7 @@
 		}
 		.msger-input {
 		  flex: 1;
-		  color: white;
+		  color: black;
 		  background: #dedede;
 		}
 		.msger-send-btn {
@@ -238,7 +238,8 @@
 		display: flex;
 		font-size: 25px;
 		padding: 10px;
-		background: black;
+		color: black;
+		background: white;
 		width: 98%;
 		}
 	.inputarea * {
