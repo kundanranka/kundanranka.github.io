@@ -11,6 +11,7 @@
 			overflow-y: scroll;
 			padding-right: 2%;
 		}
+
 		.col-8{
 			overflow: hidden;
 		}
@@ -20,7 +21,6 @@
 		
 		:root {
 		  --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-		  --msger-bg: #fff;
 		  --border: 2px solid #ddd;
 		  --left-msg-bg: #ececec;
 		  --right-msg-bg: #579ffb;
@@ -52,11 +52,11 @@
 		  justify-content: center;
 		  align-items: center;
 		  height: 100vh;
-		  background-color: black;
+		  background-color: white;
 		  font-family: Helvetica, sans-serif;
 		}
 		.card{
-			background: black;
+			background: white;
 		}
 		.msger {
 		  display: flex;
@@ -115,7 +115,7 @@
 		  max-width: 450px;
 		  padding: 15px;
 		  border-radius: 15px;
-		  background: var(--left-msg-bg);
+		  background: #efefef;
 		}
 		.msg-info {
 		  display: flex;
@@ -139,7 +139,7 @@
 		  flex-direction: row-reverse;
 		}
 		.right-msg .msg-bubble {
-		  background: #0f1d2f;
+		  background: #007bff;
 		  color: #fff;
 		  border-bottom-right-radius: 0;
 		}
@@ -150,7 +150,7 @@
 		.msger-inputarea {
 		  display: flex;
 		  padding: 10px;
-		  background: #000000;
+		  background: white;
 		}
 		.msger-inputarea * {
 		  padding: 10px;
@@ -160,8 +160,8 @@
 		}
 		.msger-input {
 		  flex: 1;
-		  color: white;
-		  background: #171717;
+		  color: black;
+		  background: #dedede;
 		}
 		.msger-send-btn {
 		  margin-left: 10px;
@@ -176,8 +176,53 @@
 		}
 
 		.msger-chat {
-		  background-color: #000000;
+		  background-color: white;
 		}
 		.msger-chat::-webkit-scrollbar {
 		  width: 0;
+		}
+/*		@media only screen and (max-width: 768px){
+			.msger-inputarea {
+				width: 100%;
+			}
+			.msger-input {
+				width: 100%;
+			}
+		}*/
+		@media only screen and (max-width: 1000px){
+			#cards{
+				overflow-x: auto;
+				display: flex;
+				flex: 1 1 100%;
+				flex-flow: nowrap;
+				
+			}
+			.content-area{
+				width: 100%;
+			}	
+			.msger{
+				max-width: none;
+			}
+			.card{
+				width: 100%;
+			}
+			.msg{
+				margin-bottom: 30px;
+				font-size: 35px;
+			}
+			.msger-inputarea {
+				font-size: 45px;
+			}
+			.msg-img{
+				width: 70px;
+				height: 70px;
+			}
+			.dark-mode-toggle{
+				width: 150px;
+				top: 50px;
+				height: 300px;
+			}
+			svg{
+				top: -56px;
+			}
 		}
