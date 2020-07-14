@@ -221,7 +221,7 @@
 				top: -56px;
 			}
 			.msger-chat{
-				
+
 		  padding-bottom: 150px;
 			}
 		}
@@ -229,7 +229,7 @@
 		position: fixed;
 		bottom: 0;
 		display: flex;
-		font-size: 30px;
+		font-size: 25px;
 		padding: 10px;
 		background: black;
 		width: 98%;
