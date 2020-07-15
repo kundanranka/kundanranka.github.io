@@ -56,7 +56,11 @@ maximum-scale=1.0, user-scalable=no" /> -->
 		.content-area{
 			height: 100%;
 			overflow: hidden;
-			margin-top: 10%;
+		}
+		@media only screen and (max-width: 1000px){
+			.content-area{
+				margin-top: 10%;
+			}	
 		}
 		#chatouter{
 			overflow: hidden;
@@ -66,19 +70,24 @@ maximum-scale=1.0, user-scalable=no" /> -->
 			height: 100%;
 		}
 		.msger-chat{
-			height: 93vh;
+			/*height: 93vh;*/
 		}
 		.inputarea{
 			width: 100%;
-			/*padding-bottom: 10%;*/
-			height: 7vh;
+			padding-bottom: 10%;
+			/*height: 7vh;*/
+		}
+		.msger-inputarea{
+			width: 100%;
+			padding-bottom: 10%;
+			/*height: 7vh;*/
 		}
 	</style>
 </head>
 <body>
 	<div class="content-area">
 		
-		<div class="row" id="chatouter" style="display: flex; height: 95vh">
+		<div class="row" id="chatouter" style="display: flex;">
 			<div class="col">
 				<div id="cards">
 					<div class="card border-danger mb-4">
@@ -107,12 +116,15 @@ maximum-scale=1.0, user-scalable=no" /> -->
 					</div>
 				</div>
 			</div>
-			<div class="col-8" id="chatsection" style="display: flex; height: calc( 100% - 50px );">
-				<section class="msger">
-				  <main class="msger-chat" >
-				  	<div class="pesudocards">
+			<div class="col-8" id="chatsection" style=" height: calc( 100% - 50px );">
+				<section class="msger" style="height: 100%;">
+					<div class="container-fluid" style="height: 90%; overflow-y: scroll;">
+						<div class="row">
+				  	<main class="msger-chat" style="overflow-y: scroll;" >
+				  		<div class="pesudocards">
 						
 					</div>
+				  	
 					<div id="toggle">
 						
 					</div>
@@ -152,11 +164,17 @@ maximum-scale=1.0, user-scalable=no" /> -->
 				      </div>
 				    </div>
 				  </main>
+				  </div>
 
-				  <form class="msger-inputarea">
+					</div>
+				  <div class="container-fluid" style="height: 10%;">
+				  	<div class="row">
+				  	<form class="msger-inputarea">
 				    <input type="text" class="msger-input" placeholder="Enter your message...">
 				    <button type="submit" class="msger-send-btn">Send</button>
 				  </form>
+				  </div>
+				  </div>
 				</section>
 			</div>
 					<div class="dark-mode-toggle">
