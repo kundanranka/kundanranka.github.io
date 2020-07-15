@@ -226,6 +226,7 @@
 			}
 			#day,#night{
 				height: 100%;
+				top: -5px;
 			}
 		}
 	.inputarea{
