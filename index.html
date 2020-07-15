@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 <head>
 	<title>Chatbot</title>
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0, 
-maximum-scale=1.0, user-scalable=no" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+maximum-scale=1.0, user-scalable=no" /> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -48,6 +48,24 @@ maximum-scale=1.0, user-scalable=no" />
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="light.css" id="csss">
+	<style type="text/css">
+		html,body{
+			overflow: hidden;
+			height: 100%;
+		}
+		.content-area{
+			height: 100%;
+			overflow: hidden;
+			margin-top: 10%;
+		}
+		#chatouter{
+			overflow: hidden;
+			height: 100%;
+		}
+		.msger{
+			height: 100%;
+		}
+	</style>
 </head>
 <body>
 	<div class="content-area">
@@ -284,7 +302,7 @@ maximum-scale=1.0, user-scalable=no" />
 	</div>
 	<script type="text/javascript">
 		document.getElementById("cards").style.height=(window.innerHeight-15)+"px";
-		// document.getElementById("chatsection").style.height="calc(100% - 50px)";
+		document.getElementById("chatsection").style.height="100%";
 
 		const msgerForm = get(".msger-inputarea");
 		const msgerInput = get(".msger-input");
