@@ -1,0 +1,74 @@
+html{
+	height: 100%;
+}
+body{
+	background: #181818;
+	background-image:radial-gradient(#212529 10%, #00000082 0);
+	background-size: 20px 20px;
+	height: 100%;
+}
+.container{
+	height: 100%;
+}
+.terminal{
+	color: green;
+}
+.header{
+	color: white;
+	font-family: 'Source Code Pro', monospace;
+	margin-top: 5vh;
+	/*margin-left: 10%;*/
+	font-size: 5vh;
+	width: 100%;
+	max-width: 80%;
+}
+.row{
+	height: 100%;
+}
+
+.col-lg{
+      padding: 0;
+      height: 100%;
+}
+
+.typed-cursor{
+  opacity: 1; 
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  /*width: 10px*.5;*/
+  margin-left: 1px;
+  -webkit-animation: blink 1.2s infinite;
+  -moz-animation: blink 1.2s infinite;
+  animation: blink 1.2s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+#htmltags{
+      font-size: 4vh;
+      font-family: "Pacifico";
+}
+
+.container{
+      margin-left:20px;
+      margin-right:10px;
+}
