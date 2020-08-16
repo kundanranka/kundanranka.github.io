@@ -38,7 +38,7 @@ body{
       /*min-height: 700px;
       max-height: 1000px;*/
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
       .col-lg-8{
             height: 100%;
       }  
